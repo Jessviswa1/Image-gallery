@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- FILTER / CATEGORY BAR -->
+  <div class="gallery-filter">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="church">Church</button>
+    <button data-filter="birds">Birds</button>
+    <button data-filter="moon">Moon</button>
+  </div>
+
+  <!-- GRID GALLERY -->
+  <div class="gallery">
+    <!-- each .gallery-item needs data-category to filter -->
+    <div class="gallery-item" data-category="nature">
+      <img src="images/n1.JPG" alt="nature"/>
+      <div class="overlay">
+        <button class="view-btn">View</button>
+      </div>
+    </div>
+    <div class="gallery-item" data-category="nature">
+      <img src="images/n2.JPG" alt="nature"/>
+      <div class="overlay">
+        <button class="view-btn">View</button>
+      </div>
+    </div>
+    <div class="gallery-item" data-category="nature">
+      <img src="images/n3.JPG" alt="nature"/>
+      <div class="overlay">
+        <button class="view-btn">View</button>
+      </div>
+    </div>
+    <div class="gallery-item" data-category="church">
+      <img src="images/c1.JPG" alt="Cityscape"/>
+      <div class="overlay">
+        <button class="view-btn">View</button>
+      </div>
+    </div>
+    <div class="gallery-item" data-category="church">
+      <img src="images/c1.JPG" alt="Cityscape"/>
+      <div class="overlay">
+        <button class="view-btn">View</button>
+      </div>
+    </div>
+    <div class="gallery-item" data-category="church">
+      <img src="images/c2.JPG" alt="Cityscape"/>
+      <div class="overlay">
+        <button class="view-btn">View</button>
+      </div>
+    </div>
+    <div class="gallery-item" data-category="moon">
+      <img src="images/m1.JPG" alt="Cityscape"/>
+      <div class="overlay">
+        <button class="view-btn">View</button>
+      </div>
+    </div>
+    <div class="gallery-item" data-category="moon">
+      <img src="images/m2.JPG" alt="Cityscape"/>
+      <div class="overlay">
+        <button class="view-btn">View</button>
+      </div>
+    </div>
+    <div class="gallery-item" data-category="moon">
+      <img src="images/m3.JPG" alt="Cityscape"/>
+      <div class="overlay">
+        <button class="view-btn">View</button>
+      </div>
+    </div>
+    <div class="gallery-item" data-category="birds">
+      <img src="images/b1.JPG" alt="Cityscape"/>
+      <div class="overlay">
+        <button class="view-btn">View</button>
+      </div>
+    </div>
+    <div class="gallery-item" data-category="birds">
+      <img src="images/b2.JPG" alt="Cityscape"/>
+      <div class="overlay">
+        <button class="view-btn">View</button>
+      </div>
+    </div>
+    <div class="gallery-item" data-category="birds">
+      <img src="images/b3.JPG" alt="Cityscape"/>
+      <div class="overlay">
+        <button class="view-btn">View</button>
+      </div>
+    </div>
+    <!-- repeat for all your images… -->
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox hidden">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt=""/>
+    <button class="nav prev" aria-label="Previous image">&#10094;</button>
+    <button class="nav next" aria-label="Next image">&#10095;</button>
+
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
